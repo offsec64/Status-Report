@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # OffSec64's System Status Script!!!
-# I need to explain what it's for here...
+# Status Report is a script I made to export a ton of info into a text file.
 # Version 1
-# Last Modified: 12:21 PM MST   8/11/2019
+# Last Modified: 13:55 on 8/11/2019
 
 
 # Script to show CPU utilization... Displays a bunch of weird stuff when script is ran...
