@@ -7,3 +7,5 @@ It exports the following:
 * Fan RPM
 * Local IP Address
 * External IP Address
+
+Just run the `startup.sh` file!
