@@ -1,5 +1,5 @@
 # Status-Report
-Notice: I have only tested on the latest versions of ubuntu.
+
 
 ## Status Report is a great way to export a lot of information into one TXT file.
 It exports the following:
@@ -33,5 +33,6 @@ Just type `./status.sh` to run! It will output to `stats.txt` in the same direct
 
 ## Notes
 
-You should copy it to your home directory to make running it easier, like with the `cp` command.
+* You should copy it to your home directory to make running it easier, like with the `cp` command.
+* I have only tested on the latest versions of ubuntu.
 
