@@ -31,6 +31,6 @@ Then to allow execution of the shell script, type:
 Just type `./status.sh` to run! It will output to `stats.txt` in the same directory. 
 
 
-> You should copy it to your home directory to make running it easier, like with the `cp` command.
+> You should copy it to your root directory to make running it easier, like with the `cp` command.
 
 
