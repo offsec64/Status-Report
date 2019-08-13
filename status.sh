@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# OffSec64's System Status Script!!!
+# OffSec64's System Status Script
 # Status Report is a script I made to export a ton of info into a text file.
 # Version 1
 # Last Modified: 20:12 on 8/12/2019
-# lm-sensors is required to run. Tested on Ubuntu 18.04 LTS (Server) and Ubuntu 19.04 desktop.
+# READ... THE... DOCUMENTATION!!!
 
 
 # Script to show CPU utilization... Displays a bunch of weird stuff when script is ran...
