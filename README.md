@@ -12,21 +12,21 @@ It exports the following:
 ## Prerequisite
 _This is based off of the ubuntu shell, specifically 18.04 LTS_
 
-### From the Ubuntu shell type in the following command:
+#### From the Ubuntu shell type in the following command:
 
 `git clone https://github.com/offsec64/Status-Report`
 
-### Then you have to get the application to collect sensor data.
+#### Then you have to get the application to collect sensor data.
 
 `sudo apt-get install lm-sensors`
 
-### From there, type `cd Status-Report` to get into the clone's directory.
+#### From there, type `cd Status-Report` to get into the clone's directory.
 
-### Then to allow execution of the shell script, type:
+#### Then to allow execution of the shell script, type:
 
 `sudo chmod +x status.sh`
 
-### Now all you have to do is type `./status.sh` to run! It will output to `stats.txt` in the same directory. 
+#### Now all you have to do is type `./status.sh` to run! It will output to `stats.txt` in the same directory. 
 
-### You should copy it to your home directory to make running it easier, like with the `cp` command.
+#### You should copy it to your home directory to make running it easier, like with the `cp` command.
 
