@@ -2,4 +2,4 @@
 Buggy, not pretty code lands here.
 
 ## Upcoming code
-`Email it to someone???`
+* I want to have it so when the script is ran, it can email the results to anyone.
