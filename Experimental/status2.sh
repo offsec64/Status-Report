@@ -31,17 +31,7 @@ echo ***PUBLIC IP ADDRESS*** >> stats.txt
 curl ifconfig.me >> stats.txt
 echo   >> stats.txt
 
-##Experiments
-
 ##EXPERIMENTS! EMAIL SUPPORT!
-
-TO_ADDRESS="email@example.com"
-FROM_ADDRESS="email@example.com"
-SUBJECT="linux mail send attachment example"
-BODY_FILE="stats.txt"
-##CC_LIST="user1@gmail.com;user2@yahoomail.com;user3@earthlink.com;user4@cheetahmail.com"
-
-uuencode ${ATTACHMENT_FILE} | mail -s ${SUBJECT} ${TO_ADDRESS} -- -r ${FROM_ADDRESS} < ${BODY_FILE}
 
 
 # Check out my Github @OffSec64
