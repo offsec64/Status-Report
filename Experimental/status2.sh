@@ -2,7 +2,7 @@
 
 # OffSec64's System Status Script
 # Status Report is a script I made to export a ton of info into a text file.
-# Version 1
+# Version 2 ALPHA
 # Last Modified: 20:12 on 8/12/2019
 # READ... THE... DOCUMENTATION!!!
 
@@ -30,5 +30,15 @@ echo   >> stats.txt
 echo ***PUBLIC IP ADDRESS*** >> stats.txt
 curl ifconfig.me >> stats.txt
 echo   >> stats.txt
+
+##EXPERIMENTS! EMAIL SUPPORT!
+
+TO_ADDRESS="email@example.com"
+FROM_ADDRESS="email@example.com"
+SUBJECT="linux mail send attachment example"
+BODY_FILE="stats.txt"
+##CC_LIST="user1@gmail.com;user2@yahoomail.com;user3@earthlink.com;user4@cheetahmail.com"
+
+uuencode ${ATTACHMENT_FILE} | mail -s ${SUBJECT} ${TO_ADDRESS} -- -r ${FROM_ADDRESS} < ${BODY_FILE}
 
 # Check out my Github @OffSec64
