@@ -33,6 +33,6 @@ Just type `./status.sh` to run! It will output to `stats.txt` in the same direct
 
 > You should copy it to your root directory to make running it easier, like with the `cp` command.
 
-[![GitHub issues](https://img.shields.io/github/issues/ukdtom/ExportTools.bundle.svg?style=flat)](https://github.com/ukdtom/ExportTools.bundle/issues)
+[![GitHub issues](https://img.shields.io/badge/tested%20with-Ubuntu%2018.04%20LTS-green)]
 
 Roland Smith
