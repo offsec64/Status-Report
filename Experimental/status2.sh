@@ -2,8 +2,8 @@
 
 # OffSec64's System Status Script
 # Status Report is a script I made to export a ton of info into a text file.
-# Version 2 ALPHA
-# Last Modified: 20:12 on 8/12/2019
+# Version 2 BETA
+# Last Modified: 17:28 on 8/24/2019
 # READ... THE... DOCUMENTATION!!!
 
 
@@ -33,5 +33,46 @@ echo   >> stats.txt
 
 ##EXPERIMENTS! EMAIL SUPPORT!
 
+python3 - <<'EOF'
+
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email import encoders
+
+
+fromaddr = "email"
+toaddr = "email"
+
+msg = MIMEMultipart()
+
+msg['From'] = fromaddr
+msg['To'] = toaddr
+msg['Subject'] = "Python Gmailer with Attachment"
+
+body = "Python Gmailer test....includes attachment. "
+
+msg.attach(MIMEText(body, 'plain'))
+
+filename = ("stats.txt")
+attachment = open("stats.txt")
+
+part = MIMEBase('application', 'octet-stream')
+part.set_payload((attachment).read())
+encoders.encode_base64(part)
+part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
+
+msg.attach(part)
+
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+server.login(fromaddr, "password")
+text = msg.as_string()
+server.sendmail(fromaddr, toaddr, text)
+server.quit()
+
+
+EOF
 
 # Check out my Github @OffSec64
