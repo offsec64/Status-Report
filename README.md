@@ -1,5 +1,11 @@
 # Status-Report
-!(https://img.shields.io/badge/tested%20with-Ubuntu%2018.04%20LTS-green)
+![Tested On](https://img.shields.io/badge/tested%20with-Ubuntu%2018.04%20LTS-green)
+
+**Special Thanks to the following**
+
+Roland Smith (StackOverFlow) for the code to use python in shell
+
+@project7io (github) for the python email script
 
 ## Status Report is a great way to export a lot of information into one TXT file.
 It exports the following:
@@ -34,7 +40,4 @@ Just type `./status.sh` to run! It will output to `stats.txt` in the same direct
 > You should copy it to your root directory to make running it easier, like with the `cp` command.
 
 
----
-**Special Thanks to the following**
-Roland Smith (StackOverFlow) for the code to use python in shell
-@project7io (github) for the python email script
+
