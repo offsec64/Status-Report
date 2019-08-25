@@ -1,5 +1,5 @@
 # Status-Report
-[![Tested On](https://img.shields.io/badge/tested%20with-Ubuntu%2018.04%20LTS-green)] (https://github.com/offsec64/status-report/#)
+[![Tested On](https://img.shields.io/badge/tested%20with-Ubuntu%2018.04%20LTS-green)](https://github.com/offsec64/status-report/#)
 
 **Special Thanks to the following**
 
