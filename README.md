@@ -49,3 +49,5 @@ Just type `./status.sh` to run! It will output to `stats.txt` in the same direct
 
 
 > You should copy it to your root directory to make running it easier, like with the `cp` command.
+
+> If you open up status.sh, on line 72 you can change your SMTP server to work with other platforms besides gmail.
