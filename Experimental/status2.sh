@@ -31,8 +31,9 @@ echo ***PUBLIC IP ADDRESS*** >> stats.txt
 curl ifconfig.me >> stats.txt
 echo   >> stats.txt
 
-##EXPERIMENTS! EMAIL SUPPORT!
+# Email section
 
+# Starts python script within shell
 python3 - <<'EOF'
 
 import smtplib
@@ -41,18 +42,20 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 
-
+# Input your email here!
 fromaddr = "email"
 toaddr = "email"
 
 msg = MIMEMultipart()
 
+#Uses variables to put email data in
 msg['From'] = fromaddr
 msg['To'] = toaddr
-msg['Subject'] = "Python Gmailer with Attachment"
+msg['Subject'] = "Status Report"
 
-body = "Python Gmailer test....includes attachment. "
+body = "Status Report! Script from @offsec64 (github)"
 
+# Attachment stuff
 msg.attach(MIMEText(body, 'plain'))
 
 filename = ("stats.txt")
