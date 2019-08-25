@@ -2,7 +2,7 @@
 
 # OffSec64's System Status Script
 # Status Report is a script I made to export a ton of info into a text file.
-# Version 2 
+# Version 2
 # Last Modified: 17:28 on 8/24/2019
 # READ... THE... DOCUMENTATION!!!
 
@@ -26,7 +26,7 @@ echo ***LOCAL IP ADDRESS*** >> stats.txt
 ifconfig | grep broadcast | cut -d " " -f 10 >> stats.txt
 
  # Line break and header for Exernal IP, curls the hopefully not-to-sketchy website ifconfig.me to get the IP. Then another line break.
-echo   >> stats.txt                                                                                                                                                                                                                                                            
+echo   >> stats.txt
 echo ***PUBLIC IP ADDRESS*** >> stats.txt
 curl ifconfig.me >> stats.txt
 echo   >> stats.txt

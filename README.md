@@ -1,5 +1,6 @@
 # Status-Report
 [![Tested On](https://img.shields.io/badge/tested%20with-Ubuntu%2018.04%20LTS-green)](https://github.com/offsec64/status-report/#status-report)
+[![Sends from](https://img.shields.io/badge/email%20sends%20from-GMAIL-yellow)](https://github.com/offsec64/status-report/#status-report)
 
 **Special Thanks to the following**
 
