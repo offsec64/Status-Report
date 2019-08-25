@@ -48,7 +48,7 @@ toaddr = "email"
 
 msg = MIMEMultipart()
 
-#Uses variables to put email data in
+# Uses variables to input email data
 msg['From'] = fromaddr
 msg['To'] = toaddr
 msg['Subject'] = "Status Report"
@@ -61,6 +61,7 @@ msg.attach(MIMEText(body, 'plain'))
 filename = ("stats.txt")
 attachment = open("stats.txt")
 
+# A bunch of email encoding
 part = MIMEBase('application', 'octet-stream')
 part.set_payload((attachment).read())
 encoders.encode_base64(part)
@@ -70,6 +71,7 @@ msg.attach(part)
 
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
+# Put in the password!!!
 server.login(fromaddr, "password")
 text = msg.as_string()
 server.sendmail(fromaddr, toaddr, text)
