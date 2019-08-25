@@ -1,5 +1,5 @@
 # Status-Report
-[![Tested On](https://img.shields.io/badge/tested%20with-Ubuntu%2018.04%20LTS-green)](https://github.com/offsec64/status-report/#)
+[![Tested On](https://img.shields.io/badge/tested%20with-Ubuntu%2018.04%20LTS-green)](https://github.com/offsec64/status-report/#status-report)
 
 **Special Thanks to the following**
 
@@ -32,12 +32,19 @@ Then to allow execution of the shell script, type:
 
 `sudo chmod +x status.sh`
 
+Now, open up the `status.sh` file
+
+`sudo nano status.sh`
+
+Go to line 46, and enter the email the report will be sending from, replacing `email`.
+
+Go to line 47, and enter the email the report will be sent to, replacing `email`.
+
+Go to line 75, and enter the password for the email the report will be sending from, replacing `password`.
+
 ## Running the script
 
 Just type `./status.sh` to run! It will output to `stats.txt` in the same directory. 
 
 
 > You should copy it to your root directory to make running it easier, like with the `cp` command.
-
-
-
